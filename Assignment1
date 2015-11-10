@@ -1,0 +1,24 @@
+ArrayList <Mountains> mountains=new ArrayList<Mountains>();
+void setup()
+{
+  background(255);
+  size(2000,2000);
+  smooth();
+  
+  loadMountains();
+  
+
+  
+}
+
+void loadMountains()
+{
+  String[] lines= loadStrings("8000s_Deaths_dataset.csv");
+
+  for(int i=0;i<lines.length;i++)
+  {
+    Mountains mountain= new Mountains(lines[i]);
+   mountains.add(mountain);
+   
+  }
+}
