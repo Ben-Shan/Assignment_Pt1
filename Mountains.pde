@@ -1,0 +1,50 @@
+class Mountains
+{
+  String year;
+  float amount;
+
+  int K2;
+  int Kangchenjunga;
+  int Lhotse;
+  int Makalu;
+  int Cho_Oyu;
+  int Dhaulagiri;
+  int Manaslu;
+  int Nanga_Parbat;
+  int Annapurna;
+  int Gasherbrum1;
+  int Broad_Peak;
+  int Gasherbrum2;
+  int Shishapangma;
+
+
+
+  Mountains(String lines)
+  {
+    String[] parts=lines.split(",");
+
+    year=parts[0];
+    K2 = Integer.parseInt(parts[1]);
+    Kangchenjunga = Integer.parseInt(parts[2]);
+    Lhotse = Integer.parseInt(parts[3]);
+    Makalu = Integer.parseInt(parts[4]);
+    Cho_Oyu = Integer.parseInt(parts[5]);
+    Dhaulagiri = Integer.parseInt(parts[6]);
+    Manaslu = Integer.parseInt(parts[7]);
+    Nanga_Parbat = Integer.parseInt(parts[8]);
+    Annapurna = Integer.parseInt(parts[9]);
+    Gasherbrum1 = Integer.parseInt(parts[10]);
+    Broad_Peak = Integer.parseInt(parts[11]);
+    Gasherbrum2 = Integer.parseInt(parts[12]);
+    Shishapangma = Integer.parseInt(parts[13]);
+    amount = Float.parseFloat(parts[1]);
+
+    //    for (int i=1; i<13; i++)
+    //    {
+    //      println(parts[i]);
+    //    }
+
+    print(parts[1]);
+  }
+}
+
