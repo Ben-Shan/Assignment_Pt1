@@ -151,6 +151,7 @@ void drawFunGraph()                                        //-----1 Graph-----//
   frameRate(1);
   float border = width * 0.1f;
   int textS=12;
+  int mNo=1;
 
 
   fill(255);
@@ -175,6 +176,17 @@ void drawFunGraph()                                        //-----1 Graph-----//
   //float scale = graphRange / dataRange;
 
   int timer= round(random(1, 13));
+  
+  
+//  for(int i=1;i<13;i++)
+//  {
+//    mNo=i;
+//    
+//    if(mNo==12)
+//    {
+//      i=1;
+//    }
+//  }
 
   stroke(255);
 
