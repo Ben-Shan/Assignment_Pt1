@@ -352,7 +352,7 @@ void drawFunGraph()                                        //-----1 Graph-----//
 void click_2_John(boolean theFlag) {
   if (theFlag==true) {
 
-    println("toggled the yoke");
+    //println("toggled the yoke");
     beans = 0;
     println("john who?");
   } else 
@@ -361,7 +361,7 @@ void click_2_John(boolean theFlag) {
     col = color(100);
     println("john snow!");
   }
-  println("a toggle ");
+  //println("a toggle ");
 }
 
 void snow()
@@ -497,6 +497,7 @@ background(0);
 
       text(locationMap, (width/10)+10, height-(height/10)+20);
       text(mountainsArr[counter], width-50, height-50);
+      text(counter, width-50,height-25);
       pushMatrix();//used to allow beep to orbit the radar
       translate(250, 250);
       rotate(radians(locationMap));//moves beep to next location
